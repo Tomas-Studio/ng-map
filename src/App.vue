@@ -1,11 +1,13 @@
 <script setup>
-import '@master/css';
+import Map from './components/Map.vue'
+
 </script>
 
 <template>
-    <h1 class="font:40 font:heavy italic m:50 text:center">
-        Hello World
+    <h1 class="font:40 m:30 font:semibold text:center">
+        Nigerian Map
     </h1>
+    <Map/>
 </template>
 
 <style scoped>
