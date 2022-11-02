@@ -66,11 +66,9 @@ onMounted(()=>{
 </script>
 
 <template>
-    <div>
-        <div class="flex w:full jc:center">this component is working</div>
     
-        <div class="map flex w:full jc:center"></div>
-    </div>
+    <div class="map flex w:full jc:center"></div>
+
 </template>
 
 <style lang="scss" scoped>

@@ -1,5 +1,6 @@
 <script setup>
 import Map from './components/Map.vue'
+import MapTopo from './components/MapTopo.vue'
 
 </script>
 
@@ -7,8 +8,8 @@ import Map from './components/Map.vue'
     <h1 class="font:40 m:30 font:semibold text:center">
         Nigerian Map
     </h1>
-    <Map/>
-    <Map2/>
+    <!-- <Map/> -->
+    <MapTopo/>
 </template>
 
 <style scoped>
