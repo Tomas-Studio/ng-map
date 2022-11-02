@@ -8,6 +8,7 @@ import Map from './components/Map.vue'
         Nigerian Map
     </h1>
     <Map/>
+    <Map2/>
 </template>
 
 <style scoped>

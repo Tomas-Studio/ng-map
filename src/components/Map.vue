@@ -1,5 +1,8 @@
 <script setup>
-import { ref, onMounted, onBeforeMount } from 'vue'
+/**
+ * This Nigeria map is created using geoJSON
+ */
+import { onMounted } from 'vue'
 import * as d3 from 'd3'
 import statesGeoJSON from '../statesGeoJSON.json'
 import populationByState from '../wave4PopulationByState.json'
@@ -18,9 +21,6 @@ const drawMap = () =>{
 
     const minPop = Math.min(...popValues)
     const maxPop = Math.max(...popValues)
-
-    console.log('minPop:', minPop)
-    console.log('maxPop:', maxPop)
 
     const colorScale = d3.scaleLinear().domain([minPop, maxPop]).range([
         d3.interpolateGreens(0.1), d3.interpolateGreens(0.9)
@@ -66,9 +66,11 @@ onMounted(()=>{
 </script>
 
 <template>
-    <div class="flex w:full jc:center">this component is working</div>
-
-    <div class="map flex w:full jc:center"></div>
+    <div>
+        <div class="flex w:full jc:center">this component is working</div>
+    
+        <div class="map flex w:full jc:center"></div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
